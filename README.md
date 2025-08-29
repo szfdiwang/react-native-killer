@@ -7,6 +7,7 @@ A killer for react-native back to desktop
 
 ```sh
 npm install react-native-killer
+yarn add react-native-killer
 ```
 
 
@@ -14,11 +15,11 @@ npm install react-native-killer
 
 
 ```js
-import { multiply } from 'react-native-killer';
+import { exitApp } from 'react-native-killer';
 
-// ...
+// Call the method when needed to kill the process
 
-const result = multiply(3, 7);
+exitApp();
 ```
 
 
