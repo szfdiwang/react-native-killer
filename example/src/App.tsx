@@ -1,12 +1,16 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-killer';
-
-const result = multiply(3, 7);
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { exitApp } from 'react-native-killer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <TouchableOpacity
+        onPress={() => {
+          exitApp();
+        }}
+      >
+        <Text>Result: {`123456`}</Text>
+      </TouchableOpacity>
     </View>
   );
 }

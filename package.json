@@ -91,7 +91,6 @@
   "workspaces": [
     "example"
   ],
-  "packageManager": "yarn@3.6.1",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -157,7 +156,7 @@
     }
   },
   "create-react-native-library": {
-    "languages": "kotlin-objc",
+    "languages": "java-objc",
     "type": "turbo-module",
     "version": "0.53.0"
   }

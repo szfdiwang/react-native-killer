@@ -28,7 +28,7 @@ public class KillerPackage extends TurboReactPackage {
     public ReactModuleInfoProvider getReactModuleInfoProvider() {
         return () -> {
             final Map<String, ReactModuleInfo> moduleInfos = new HashMap<>();
-            // boolean isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
+            boolean isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
             moduleInfos.put(
                     KillerModule.NAME,
                     new ReactModuleInfo(
@@ -38,7 +38,7 @@ public class KillerPackage extends TurboReactPackage {
                             false, // needsEagerInit
                             false, // hasConstants
                             false, // isCxxModule
-                            false // isTurboModule
+                            isTurboModule // isTurboModule
             ));
             return moduleInfos;
         };
